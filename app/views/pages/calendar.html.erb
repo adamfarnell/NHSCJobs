@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 text-center bootstrap-welcome">
+            <h1>Calendar</h1>
+            <p class="lead">Use this calendar to plot your availability.</p>
+            <%= month_calendar do |date| %>
+                <%= date %>
+            <% end %>
+            <%= week_calendar do |date| %>
+                <%= date %>
+            <% end %>
+        </div>
+    </div>
+</div>
