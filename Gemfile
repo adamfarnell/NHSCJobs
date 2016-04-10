@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'bootstrap', '~> 4.0.0.alpha3'
+gem 'bundler', '>= 1.8.4'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record
@@ -23,6 +24,10 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'sprockets-rails', '3.0.4'
+gem "simple_calendar", "~> 2.0"
+# gem 'bootstrap', '~> 4.0.0.alpha3'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -32,9 +37,20 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+#source 'https://rails-assets.org' do
+#   gem 'rails-assets-tether'
+#   gem 'rails-assets-bootstrap'
+#end
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+#  gem 'jekyll', '~> 3.0.1'
+#  gem 'jekyll-redirect-from', '~> 0.9.0'
+#  gem 'jekyll-sitemap', '~> 0.9.0'
+#  gem 'sass', '~> 3.4.19'
+#  gem 'scss_lint', '~> 0.43'
 end
 
 group :development do
