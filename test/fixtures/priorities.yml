@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  start_time: 2016-04-11 22:15:27
+  pvalue: 1
+
+two:
+  start_time: 2016-04-11 22:15:27
+  pvalue: 1

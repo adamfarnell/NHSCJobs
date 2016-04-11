@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
     
+  resources :priorities
     root 'pages#home'
     get 'welcome' => 'pages#home'
     get 'calendar' => 'pages#calendar'

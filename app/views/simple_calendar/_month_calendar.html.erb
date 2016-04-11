@@ -1,9 +1,9 @@
 <div class="simple-calendar">
     <div class = "row">
         <div class = "row col-sm-4 col-sm-offset-4">
-            <div class = "row">
+            <div class = "row calendar-title">
                 <%= link_to "Previous", calendar.url_for_previous_view, { :class=>"btn btn-info col-sm-4" } %>
-                <div class = "col-sm-4 calendar-title">
+                <div class = "col-sm-4">
                     <%= I18n.t("date.month_names")[start_date.month] %> <%= start_date.year %>
                 </div>
                 <%= link_to "Next", calendar.url_for_next_view, { :class=>"btn btn-info col-sm-4" } %>
@@ -11,7 +11,7 @@
         </div>
     </div>
 
-  <table class="table table-bordered table-striped table-hover">
+  <table class="table table-bordered table-striped table-hover calendar">
     <thead>
       <tr>
         <% date_range.slice(0, 7).each do |day| %>
