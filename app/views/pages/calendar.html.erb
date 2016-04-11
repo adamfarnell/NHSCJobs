@@ -1,6 +1,15 @@
+<head>
+    <%= stylesheet_link_tag 'calendar', media: 'all', 'data-turbolinks-track' => true %>
+</head>
 <div class="container">
+    <div class="row toprow">
+        <a class="col-sm-3 button" href="welcome">
+            <%= image_tag("nhsclogo.jpeg", :alt => "Network Health and Social Care", class: "logo") %>
+        </a>
+        <div class="col-sm-6"></div>
+    </div>
     <div class="row">
-        <div class="col-sm-12 text-center bootstrap-welcome">
+        <div class="col-sm-12 text-center">
             <h1>Calendar</h1>
             <p class="lead">Use this calendar to plot your availability.</p>
             <%= month_calendar do |date| %>

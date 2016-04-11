@@ -1,2 +1,17 @@
 @import 'bootstrap.min';
 @import 'bootstrap-theme.min';
+
+
+.toprow {
+    padding-top: 20px;
+}
+
+.logo {
+    max-width:100% !important;
+    height: auto;
+    display: block;
+}
+
+.calendar-title {
+    font-size:2vw;
+}
