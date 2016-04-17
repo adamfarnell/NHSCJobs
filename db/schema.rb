@@ -11,11 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160411211527) do
+ActiveRecord::Schema.define(version: 20160417113913) do
 
-  create_table "priorities", force: :cascade do |t|
-    t.datetime "start_time"
-    t.integer  "pvalue"
+  create_table "priorities", force: :cascade do |priority|
+    priority.datetime "start_time", null: false
+    priority.integer  "pvalue"
+    priority.integer  "user_id"
+    priority.datetime "created_at", null: false
+    priority.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "first_name"
+    t.string   "surname"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -11,7 +11,7 @@
     <div class="row">
         <div class="col-sm-12 text-center">
             <h1>Calendar</h1>
-            <p class="lead">Use this calendar to plot your availability.</p>
+            <p>Use this calendar to plot your availability.</p>
             <%= month_calendar events: @priorities do |date, priorities| %>
                 <%= date %>
                 <% priorities.each do |priority| %>

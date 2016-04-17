@@ -1,0 +1,22 @@
+<div class = "container-fluid">
+    <div class = "row panel">
+        <% @priorities.each do |t| %>
+        <div class ="col-xs-4 text-center">
+            <h1><%= t.start_time %></h1>
+            <h3><%= t.pvalue %></h3>
+        </div>
+        <% end %>
+        <%= month_calendar events: @priorities do |date, priorities| %>
+            <%= date %>
+            <% priorities.each do |priority| %>
+                <div>
+                    <%= priority.pvalue %>
+                </div>
+            <% end %>
+        <% end %>
+
+        <%= week_calendar do |date| %>
+            <%= date %>
+        <% end %>
+    </div>
+</div>
