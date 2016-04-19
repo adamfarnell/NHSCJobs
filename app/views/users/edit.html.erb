@@ -1,0 +1,13 @@
+<div class = "container-fluid">
+    <div class = "row panel">
+        <%= form_for(@user) do |t| %>
+        <div class = "col-xs-6">
+            <%= t.text_field :first_name %>
+            <%= t.text_field :surname %>
+        </div>
+        <div class = "col-xs-6">
+            <%= t.submit "Submit", :class => "btn" %>
+        </div>
+        <% end %>
+    </div>
+</div>
